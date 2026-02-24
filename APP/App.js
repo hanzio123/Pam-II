@@ -6,6 +6,7 @@ var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
+       
 
 fetch("http://localhost:3000/posts", requestOptions)
   .then(response => response.json())
