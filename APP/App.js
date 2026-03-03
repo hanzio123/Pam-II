@@ -8,7 +8,7 @@ var requestOptions = {
 };
        
 
-fetch("http://localhost:3000/posts", requestOptions)
+fetch("https://fuzzy-pancake-g4pxggj7r5vr295p6-3000.app.github.dev/posts", requestOptions)
   .then(response => response.json())
   .then(result => console.log(result))
   .catch(error => console.log('error', error));
