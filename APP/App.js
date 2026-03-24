@@ -1,30 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import AppRoutes from "./routes/app.routes";
 
 export default function App() {
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow'
-};
-       
-
-fetch("https://fuzzy-pancake-g4pxggj7r5vr295p6-3000.app.github.dev/posts", requestOptions)
-  .then(response => response.json())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <AppRoutes />;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// Usuário toca na tela
+//         ↓
+// Screen (MovieList)
+//         ↓
+// Hook (useMovies)
+//         ↓
+// Service (movieService)
+//         ↓
+// API (api.js / servidor)
+//         ↓
+// Service retorna dados
+//         ↓
+// Hook atualiza estado
+//         ↓
+// Screen renderiza componentes

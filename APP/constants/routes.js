@@ -1,5 +1,5 @@
-export const Routes = {
-    MOVIE_LIST: "MovieList",
-    MOVIE_DETAIL: "MovieDetails",
-    CREATE_MOVIE: "CreateMovie"
+export const ROUTES = {
+  MOVIE_LIST: "MovieList",
+  MOVIE_DETAILS: "MovieDetails",
+  CREATE_MOVIE: "CreateMovie",
 };
