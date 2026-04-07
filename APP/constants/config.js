@@ -1,1 +1,1 @@
-export const API_URL = "https://reimagined-space-capybara-pjwvr5464jgw36qjj-3001.app.github.dev/";
+export const API_URL = "https://solid-goggles-4jrqxx5wvjg4f76x7-3000.app.github.dev/filmes";
