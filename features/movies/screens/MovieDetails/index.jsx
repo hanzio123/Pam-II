@@ -1,14 +1,14 @@
 import React from "react";
 import {useRoute} from "@react-navigation/native";
-import{useElencoMovie}from "../../hooks/useElencoMovie";
-import ActorCard from "../components/ActorCard";
+import{useElencoMovies}from "../../hooks/useElencoMovies";
+import ActorCard from "../../components/ActorCard";
 import {View,Text,Image,Scrollview,FlatList } from "react-native";
 import styles from "./styles";
 
 export default function MovieDetails(){
 const route = useRoute();
 const{movie}=route.params;
-const{elenco}=useElencoMovie(movie.id);
+const{elenco}=useElencoMovies(movie.id);
 return(
 <Scrollview style={styles.container}>
 

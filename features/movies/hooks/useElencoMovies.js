@@ -1,5 +1,5 @@
-import { useState, useState } from "react";
-import { getElencoMovie } from "../services/movieservice";
+import { useState, useEffect } from "react";
+import { getElencoMovie } from "../services/movieService";
 
 export const useElencoMovie = (movieId) => {
   const [elenco, setElenco] = useState([]);

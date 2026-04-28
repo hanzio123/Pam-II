@@ -1,12 +1,12 @@
 import React from "react";
 import { View, FlatList, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { useMovies } from "../../hooks/useMovies";
+import { useElencoMovies } from "../../hooks/useElencoMovies";
 import MovieCard from "../../components/MovieCard";
 import { ROUTES } from "../../../../constants/routes";
 
 export default function MovieList() {
-  const { movies, loading } = useMovies();
+  const { movies, loading } = useElencoMovies();
   const navigation = useNavigation();
 
   if (loading) { return <Text>Carregando...</Text>;}
