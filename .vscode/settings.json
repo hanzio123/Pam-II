@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+      "node_modules":true,
+      ".expo":true,
+      "package-lock.json":true,
+      ".github":true,
+      "app.json":true,
+      "index.js":true,
+      "package.json":false,
+      "README.md":true,
+      ".gitignore":true
+    },
+    "postman.settings.dotenv-detection-notification-visibility": false
+  }

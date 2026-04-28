@@ -1,1 +1,0 @@
-export const API_URL = "https://solid-goggles-4jrqxx5wvjg4f76x7-3000.app.github.dev/filmes";
